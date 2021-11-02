@@ -1,0 +1,53 @@
+#main {
+  width: 408px;
+  height: 408px;
+  background: white;
+  border: 2px solid gray;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+h2 {
+  text-align: center;
+}
+
+#con {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  top: -408px; /*隐藏所有格子*/
+  border-collapse: collapse;
+}
+/* 行 */
+.row {
+  height: 100px;
+  width: 100%;
+}
+/* 一个块 */
+.cell {
+  height: 100px;
+  width: 100px;
+  float: left;
+  border: rgb(54, 74, 129) 1px solid;
+}
+
+.black {
+       background: black;
+  /*  background: url(zzy.jpg) no-repeat;*/
+   /* background-size: 100%;*/
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+}
+
+.start {
+  margin: 20px auto;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background: yellowgreen;
+  line-height: 50px;
+  color: #fff;
+}
