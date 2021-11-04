@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript版扫雷</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+</head>
+<body>
+    <div id="JMS_main" class="main">
+        <table id="landmine"></table>
+        <div id="operation">
+            <div class="tip">剩余雷数：<span class="light red" id="landMineCount">0</span> 个</div>
+            <div class="tip">持续时间: <span class="light f60" id="costTime">0</span> 秒</div>
+            <fieldset>
+                <legend>难度选择：</legend>
+                <input type="radio" name="level" id="llevel" checked="checked" value="10" /><label for="llevel">初级（10*10）</label><br />
+                <input type="radio" name="level" id="mlevel" value="15" /><label for="mlevel">中级（15*15）</label><br />
+                <input type="radio" name="level" id="hlevel" value="20" /><label for="hlevel">高级（20*20）</label><br />
+            </fieldset>
+            <input type="button" id="begin" value="开始游戏" /><br />
+            <div class="tip txtleft">提示：
+                <ul>
+                    <li>1、点击“开始游戏”游戏开始计时</li>
+                    <li>2、游戏过程中点击“开始游戏”将开始新游戏</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="jms.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
